@@ -10,8 +10,8 @@
 
             this.background = this.add.sprite(0, 0, 'stage');
 
-            this.music = this.add.audio('music', 1, false);
-            this.music.play();
+            //this.music = this.add.audio('music', 1, false);
+            //this.music.play();
 
             this.player = new Player(this.game, 130, 284);
 
