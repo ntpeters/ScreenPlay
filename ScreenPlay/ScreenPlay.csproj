@@ -19,7 +19,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.css" />
-    <Content Include="assets\level1.png" />
     <Content Include="assets\loader.png" />
     <Content Include="assets\logo.png" />
     <Content Include="assets\pacman_chomp.wav" />
@@ -32,10 +31,9 @@
     <Content Include="assets\player_red.png" />
     <Content Include="assets\player_yellow.png" />
     <Content Include="assets\power_pellet.png" />
-    <Content Include="assets\simon.png" />
     <Content Include="assets\stage.png" />
-    <Content Include="assets\title.mp3" />
     <Content Include="assets\titlepage.jpg" />
+    <Content Include="assets\wall.png" />
     <Content Include="index.html" />
     <Content Include="phaser.js" />
     <Content Include="phaser.min.js" />
@@ -51,6 +49,7 @@
     <TypeScriptCompile Include="pixi.d.ts" />
     <TypeScriptCompile Include="Player.ts" />
     <TypeScriptCompile Include="Preloader.ts" />
+    <TypeScriptCompile Include="Wall.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>

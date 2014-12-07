@@ -1,33 +1,29 @@
-﻿module Castlevania {
-
+﻿module ScreenPlay {
     export class Boot extends Phaser.State {
-
         preload() {
-
+            //Load the loading bar
             this.load.image('preloadBar', 'assets/loader.png');
-
         }
 
         create() {
-
-            //  Unless you specifically need to support multitouch I would recommend setting this to 1
+            //We don't need multitouch
             this.input.maxPointers = 1;
 
-            //  Phaser will automatically pause if the browser tab the game is in loses focus. You can disable that here:
-            this.stage.disableVisibilityChange = true;
+            //Since people will be waiting to play in a queue, we don't want to pause the game if the tab loses focus
+            this.stage.disableVisibilityChange = false;
 
             if (this.game.device.desktop) {
-                //  If you have any desktop specific settings, they can go in here
-                //this.stage.scale.pageAlignHorizontally = true;
+                //Desktop specific settings
             }
             else {
-                //  Same goes for mobile settings.
+                //Mobile specific settings
             }
+
+            //Start the physics
             this.game.physics.startSystem(Phaser.Physics.ARCADE);
+
+            //Move to the preload state
             this.game.state.start('Preloader', true, false);
-
         }
-
     }
-
 }
