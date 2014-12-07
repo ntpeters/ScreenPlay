@@ -18,7 +18,7 @@
 
             if (this.game.device.desktop) {
                 //  If you have any desktop specific settings, they can go in here
-                this.stage.scale.pageAlignHorizontally = true;
+                //this.stage.scale.pageAlignHorizontally = true;
             }
             else {
                 //  Same goes for mobile settings.
