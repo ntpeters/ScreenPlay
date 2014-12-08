@@ -38,13 +38,12 @@
                 }
             }
             
-
             //Add the player (TODO: add the AI players)
-            this.player = new Player(this.game, 45, 45);
+            this.player = new Player(this.game, 45, 45, this.walls);
         }
 
         update() {
-            this.game.physics.arcade.collide(this.player, this.walls);
+            this.game.physics.arcade.collide(this.player, this.walls, this.player.onWallCollide);
         }
     }
 } 
